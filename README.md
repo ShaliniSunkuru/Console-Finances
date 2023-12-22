@@ -56,9 +56,9 @@ The following tools and technologies were used in this project
   
 ## Deployment
 
-Here is a link to the deployed website. Click it and explore.
+Here is a link to the deployed project.
 
-https://shalinisunkuru.github.io/Bootstrap-Portfolio/ 
+https://shalinisunkuru.github.io/Console-Finances/ 
 
 ## Usage
 
