@@ -94,6 +94,11 @@ var totalMonths = finances.length;
 console.log("Total Months: " + totalMonths);
 
 // The net total amount of Profit/Losses over the entire period.
+var totalAmount = 0;
+for (var i = 0; i < totalMonths; i++){
+  totalAmount += finances[i][1];
+}
+console.log("Total: $" + totalAmount);
 
 // The average of the changes in Profit/Losses over the entire period.
 
