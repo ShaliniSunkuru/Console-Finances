@@ -40,9 +40,9 @@ I see the month and the amount of the greatest decrease in profit/loss
 
 ## Screenshot
 
-Here is a screenshot of the deployed website when opened using its URL.
+Here is a screenshot of the data displayed on the console.
 
-![Screenshot of Shalini Sunkuru's Porfolio website](./images/screenshot.png)
+![Screenshot of financial analysis data](./images/Screenshot1.png)
 
 ## Technology Used
 
@@ -66,6 +66,9 @@ Click on the url for the deployed project.
 Navigate to the developer tools by right-clicking and clicking on Inspect. 
 Select the Console tab.
 You should be able to view the details of Financial Analysis similar to the screenshot.
+
+![Screenshot of console in developer tools](./images/Screenshot.png)
+
 
 ## Credits
 
