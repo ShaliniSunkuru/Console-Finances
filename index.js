@@ -89,6 +89,8 @@ var finances = [
 
 // The total number of months included in the dataset.
 
+var totalMonths = finances.length;
+console.log("Total Months: " + totalMonths);
 
 // The net total amount of Profit/Losses over the entire period.
 
