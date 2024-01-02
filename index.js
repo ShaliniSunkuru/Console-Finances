@@ -118,21 +118,30 @@ console.log("Average Change: " + averageChange.toFixed(2)); //change rounded to 
 
 // The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.
 var change = 0;
-var maxChange = 0;
-var minChange = 0; 
+var maxIncrease = 0;
+var maxDecrease = 0; 
+
+// Greatest increase in profit/loss
+
 for(var i = 0; i < totalMonths - 1 ; i++){
   
   change = finances[i+1][1] - finances[i][1];
-  // Greatest increase in profit/loss
-  if(change > maxChange){
-    maxChange = change;
+
+  if(change > maxIncrease){
+    maxIncrease = change;
     maxMonth = finances[i + 1][0];
   } 
-  //Greatest decrease in profit/loss
-  if(change < minChange){
-    minChange = change;
+}
+
+//Greatest decrease in profit/loss
+
+for(var i = 0; i < totalMonths - 1 ; i++){
+  
+  change = finances[i][1] - finances[i+1][1];
+  if(change > maxDecrease){
+    maxDecrease = change;
     minMonth = finances[i + 1][0];
   } 
 }
-console.log("Greatest increase in profit/losees: " + maxMonth +" ($" + maxChange + ")");
-console.log("Greatest decrease in profit/losees: " + minMonth +" ($" + minChange + ")");
+console.log("Greatest increase in profit/losees: " + maxMonth +" ($" + maxIncrease + ")");
+console.log("Greatest decrease in profit/losees: " + minMonth +" ($-" + maxDecrease + ")");
